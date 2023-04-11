@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foodie In Seattle</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to your CSS stylesheet -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-GdJQma1vJ53yzVoCfs2Hsf6n5IT2gJ/upnfpUpM01pXH6Urg+6UksdQRVzIwMWIj" crossorigin="anonymous">
+    
+
+</head>
+
+<body>
+    <script>
+        function changeBg(){
+
+            const images = [
+
+                'url("/images/2.jpg")',
+                'url("/images/3.jpg")'
+
+        
+            ]
+
+            const section = document.querySelector('body')
+            const bg = images[Math.floor(Math.random()*images.length)];
+            section.style.backgroundImage=bg;
+
+        }
+
+        setInterval(changeBg,1000)
+
+    </script>
+	<header>
+        <h1 class="header-title"><i class="fas fa-utensils"></i><span>Foodie In Seattle</span></h1>
+		<nav class="header-nav">
+        
+			<ul>
+				<li><a href="#about"> About</a></li>
+				<li><a href="#search">Search</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+    <div class="wrapper" >
+	<main >
+		<section >
+			<h2>Explore Restaurants In Seattle</h2>
+            <button type="button">Let's Go</button>
+        </section>
+
+
+
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Restaurant Search Engine. All rights reserved.</p>
+	</footer>
+    </div>
+
+</body>
+</html>
